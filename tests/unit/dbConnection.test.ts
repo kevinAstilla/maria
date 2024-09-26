@@ -1,6 +1,8 @@
 import { Pool } from 'pg';
 import pool from '../../src/config/database';
 
+// to-do: this needs to be reqwritten to use TypeORM
+
 describe('Database Connection Test', () => {
   it('should connect to the database successfully', async () => {
     const client = await pool.connect();
